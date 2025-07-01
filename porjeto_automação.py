@@ -1,5 +1,6 @@
+import pandas as pd
 # Importar a base de dados
-
+tabela_venda = pd.read_excel('Vendas.xlsx')
 # Visualizar a base de dados
 
 # Faturamento por loja
