@@ -22,6 +22,7 @@ print(quantidade)
 # Ticket medio por produto em cada loja
 print("-" *50)
 ticket_medio = (faturamento['Valor Final'] / quantidade['Quantidade']).to_frame()
+ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
 print(ticket_medio)
 
 # Enviar um email com o relatório
@@ -35,13 +36,13 @@ mail.HTMLBody = f'''
 <p>Segue o Relatório de Vendas por cada Loja.</p>
 
 <p>Faturamento:</p>
-{faturamento.to_html()}
+{faturamento.to_html(formatters={'Valor Final': 'R${:,.2f}'.format})}
 
 <p>Quantidade Vendida:</p>
 {quantidade.to_html()}
 
 <p>Ticket Médio dos Produtos em cada Loja:</p>
-{ticket_medio.to_html()}
+{ticket_medio.to_html(formatters={'Ticket Médio': 'R${:,.2f}'.format})}
 
 <p>Qualquer duvida estou a disposição</p>
 
