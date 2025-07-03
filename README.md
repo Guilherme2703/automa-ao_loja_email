@@ -53,7 +53,7 @@ pip install pandas pywin32
 
 ## 📬 Fluxo do Projeto
 
-1- O usuário fornece a planilha Vendas.xlsx
-2- O script processa os dados e calcula os indicadores
-3- O corpo do e-mail é montado automaticamente em HTML
-4- O Outlook dispara o e-mail com o relatório
+1. O usuário fornece a planilha Vendas.xlsx
+2. O script processa os dados e calcula os indicadores
+3. O corpo do e-mail é montado automaticamente em HTML
+4. O Outlook dispara o e-mail com o relatório
