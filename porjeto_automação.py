@@ -27,26 +27,26 @@ print(ticket_medio)
 # Enviar um email com o relatório
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'glimadefreitas20@gmail.com'
+mail.To = 'glimadefreitas21@gmail.com'
 mail.Subject = 'Relatorio de Vendas por Loja'
-mail.HTMLBody = '''
-Prezados,
+mail.HTMLBody = f'''
+<p>Prezados,</p>
 
-Segue o Relatório de Vendas por cada Loja.
+<p>Segue o Relatório de Vendas por cada Loja.</p>
 
-Faturamento:
-{}
+<p>Faturamento:</p>
+{faturamento.to_html()}
 
-Quantidade Vendida:
-{}
+<p>Quantidade Vendida:</p>
+{quantidade.to_html()}
 
-Ticket Médio dos Produtos em cada Loja:
-{}
+<p>Ticket Médio dos Produtos em cada Loja:</p>
+{ticket_medio.to_html()}
 
-Qualquer duvida estou a disposição
+<p>Qualquer duvida estou a disposição</p>
 
-Att.,
-Guilherme Lima de Freitas
+<p>Att.,</p>
+<p>Guilherme Lima de Freitas</p>
 '''
 mail.Send()
 
