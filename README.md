@@ -51,9 +51,23 @@ pip install pandas pywin32
 3️⃣ Abra o Outlook e mantenha a conta configurada e logada <br>
 4️⃣ Rode o script Python
 
+---
+
 ## 📬 Fluxo do Projeto
 
 1. O usuário fornece a planilha Vendas.xlsx
 2. O script processa os dados e calcula os indicadores
 3. O corpo do e-mail é montado automaticamente em HTML
 4. O Outlook dispara o e-mail com o relatório
+
+---
+
+## 📌 Contato
+[Guilherme Lima de Freitas]
+[guilherme2021freitas@gmail.com]
+LinkedIn :https://www.linkedin.com/in/guilherme-lima-de-freitas/
+
+
+---
+
+👉 **Se quiser**, eu posso também te ajudar a criar um `LICENSE` ou o arquivo `.gitignore` para esse repositório — me avise!
