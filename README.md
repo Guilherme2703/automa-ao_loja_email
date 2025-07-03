@@ -48,6 +48,12 @@ git clone https://github.com/Guilherme2703/automa-ao_loja_email.git
 pip install pandas pywin32
 ```
 
-3️⃣ Abra o Outlook e mantenha a conta configurada e logada
+3️⃣ Abra o Outlook e mantenha a conta configurada e logada <br>
 4️⃣ Rode o script Python
 
+## 📬 Fluxo do Projeto
+
+1- O usuário fornece a planilha Vendas.xlsx
+2- O script processa os dados e calcula os indicadores
+3- O corpo do e-mail é montado automaticamente em HTML
+4- O Outlook dispara o e-mail com o relatório
