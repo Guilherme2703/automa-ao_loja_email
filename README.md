@@ -41,13 +41,12 @@ Estes dados são exibidos em tabelas claras e enviadas automaticamente no corpo 
 
 ```bash
 git clone https://github.com/Guilherme2703/automa-ao_loja_email.git
-
+```
 2️⃣ Instale as dependências:
 
-bash
-Copiar
-Editar
+```bash
 pip install pandas pywin32
+```
 
 3️⃣ Abra o Outlook e mantenha a conta configurada e logada
 4️⃣ Rode o script Python
