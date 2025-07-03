@@ -68,6 +68,3 @@ pip install pandas pywin32
 LinkedIn :https://www.linkedin.com/in/guilherme-lima-de-freitas/
 
 
----
-
-👉 **Se quiser**, eu posso também te ajudar a criar um `LICENSE` ou o arquivo `.gitignore` para esse repositório — me avise!
